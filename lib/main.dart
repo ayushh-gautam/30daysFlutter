@@ -12,8 +12,8 @@ void main(List<String> args) {
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
       routes: {
-        MyOwnRoutes.loginpage: (context) => LoginPage(),
-        MyOwnRoutes.homepage: (context) => HomePage(),
+        '/': (context) => LoginPage(),
+        MyOwnRoutes.HomePage: (context) => HomePage(),
       },
     ),
   );
