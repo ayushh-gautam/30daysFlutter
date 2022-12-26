@@ -1,4 +1,5 @@
 import 'package:catalog_app/Pages/homePage.dart';
+import 'package:catalog_app/Pages/utility/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'Pages/login_page.dart';
@@ -11,8 +12,8 @@ void main(List<String> args) {
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
       routes: {
-        "/": (context) => LoginPage(),
-        "/home": (context) => HomePage(),
+        MyOwnRoutes.loginpage: (context) => LoginPage(),
+        MyOwnRoutes.homepage: (context) => HomePage(),
       },
     ),
   );
