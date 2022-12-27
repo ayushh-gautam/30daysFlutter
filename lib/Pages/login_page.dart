@@ -3,7 +3,13 @@ import 'package:catalog_app/Pages/utility/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  String namee = "";
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -18,8 +24,8 @@ class LoginPage extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const Text(
-              'Welcome',
+            Text(
+              'Welcome $namee',
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -37,6 +43,10 @@ class LoginPage extends StatelessWidget {
                       hintText: 'Enter your username',
                       labelText: "UserName",
                     ),
+                    onChanged: (value) {
+                      namee = value;
+                      setState(() {});
+                    },
                   ),
                   TextFormField(
                     obscureText: true,
@@ -64,4 +74,4 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
-//1:51:24
+//tomorrow-morning-continue
