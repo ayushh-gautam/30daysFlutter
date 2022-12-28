@@ -7,6 +7,7 @@ import 'Pages/login_page.dart';
 void main(List<String> args) {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.lato().fontFamily,
