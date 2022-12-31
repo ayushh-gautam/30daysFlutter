@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'Pages/login_page.dart';
 
+
+// Learnt about context and constraints
 void main(List<String> args) {
 
   runApp(
