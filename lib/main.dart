@@ -4,16 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'Pages/login_page.dart';
 
-
 // Learnt about context and constraints
 void main(List<String> args) {
-
   runApp(
-     MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
-        fontFamily: GoogleFonts.lato().fontFamily,
+        //fontFamily: GoogleFonts.lato().fontFamily,
         appBarTheme: const AppBarTheme(
           color: Colors.white,
           elevation: 0.0,
