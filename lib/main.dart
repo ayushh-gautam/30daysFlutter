@@ -5,16 +5,28 @@ import 'package:google_fonts/google_fonts.dart';
 import 'Pages/login_page.dart';
 
 void main(List<String> args) {
+
   runApp(
-    MaterialApp(
+     MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.lato().fontFamily,
+        appBarTheme: const AppBarTheme(
+          color: Colors.white,
+          elevation: 0.0,
+          iconTheme: IconThemeData(
+            color: Colors.black,
+          ),
+          titleTextStyle: TextStyle(
+            color: Colors.black,
+          ),
+        ),
       ),
+      initialRoute: MyOwnRoutes.HomePage,
       routes: {
         '/': (context) => LoginPage(),
-        MyOwnRoutes.HomePage: (context) => HomePage(),
+        MyOwnRoutes.HomePage: (context) => const HomePage(),
       },
     ),
   );

@@ -1,9 +1,10 @@
 import 'package:catalog_app/Pages/homePage.dart';
 import 'package:catalog_app/Pages/utility/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
+  @override
+
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
@@ -44,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Text(
                 'Welcome $namee',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
@@ -57,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
                 child: Column(
                   children: [
                     TextFormField(
-                      decoration: InputDecoration(
+                      decoration:const InputDecoration(
                         hintText: 'Enter your username',
                         labelText: "UserName",
                       ),
@@ -93,7 +94,7 @@ class _LoginPageState extends State<LoginPage> {
                       splashColor: Colors.red,
                       onTap: () => moveToHome(context),
                       child: AnimatedContainer(
-                        duration: Duration(seconds: 1),
+                        duration: const Duration(seconds: 1),
                         height: 50,
                         width: changeButton ? 50 : 150,
                         decoration: BoxDecoration(
@@ -125,4 +126,4 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-// continue tomorrow
+// tomorrow continue in day 5
